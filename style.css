@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Microsoft YaHei","Arial";
+}
+
+body{
+	background-image: url(bg.png);
+
+}
+svg{
+	display:block;
+	fill:#0084ff;
+	height: 60px;
+	width: 200px;
+	margin:100px auto 60px auto;
+}
+.search{
+	margin:0 auto;
+	width:400px;
+	position: relative;
+}
+input,button{
+	border:none;
+	height:42px;
+	outline: none;
+}
+input{
+	
+	width: 100%;
+	right: 0;
+	border:2px solid #424242;
+	border-radius: 40px;
+	padding-left: 14px;
+	font-size: 14px;
+}
+
+button{
+	position: absolute;
+	right: 0;
+	top:50%;
+	transform: translateY(-50%);
+	width: 40px;
+	background:none;
+	cursor: pointer;
+}
+
+button:before{
+	content: "\f002";
+	font-family: FontAwesome;
+	color: #424242;
+}
